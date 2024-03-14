@@ -4,22 +4,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Nopage from './pages/nopage/Nopage';
 import MyState from './context/data/MyState';
 import Login from './pages/registration/Login'
-import Updateproduct from './pages/home/Updateproduct';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AddTaskModal from './pages/home/Addproduct';
-import Modal from './pages/home/TaskModal';
 
 
 
 const App = () => {
+  const token = localStorage.getItem('token');
+
   return (
     <MyState>
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/' element={token ? <Home /> : <Login />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/updatetask/:id' element={<Updateproduct />} />
           <Route path='/*' element={<Nopage />} />
         </Routes>
       </Router>

@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post('/signup', signup);
 
-router.get('/fake',fake)
+router.get('/',fake)
 
 
 
