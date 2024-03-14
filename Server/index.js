@@ -26,7 +26,7 @@ const connectToDatabase = async () => {
 
 async function makeApiCall() {
     try {
-        const response = await fetch("https://zero8-03-2024-advisoropedia-assignment.onrender.com/fake");
+        const response = await fetch("https://to-do-list-march-24.onrender.com/");
         if (response.ok) {
             console.log("API call successful");
         } else {
