@@ -7,6 +7,8 @@ import Login from './pages/registration/Login'
 import Updateproduct from './pages/home/Updateproduct';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AddTaskModal from './pages/home/Addproduct';
+import Modal from './pages/home/TaskModal';
 
 
 

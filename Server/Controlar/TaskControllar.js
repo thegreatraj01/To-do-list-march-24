@@ -1,4 +1,5 @@
 import Todo from '../Schema/ToDo.js';
+import mongoose from 'mongoose';
 
 const dueTasks = async (req, res) => {
     try {
@@ -135,7 +136,7 @@ const removeTask = async (req, res) => {
         }
 
         // Find the task by ID and owner
-        const task = await Todo.findOne({ _id: taskId, owner: req.user });
+        const task = await Todo.findOne({ _id: taskId, owner: req.user._id });
 
         // Check if task exists
         if (!task) {
@@ -148,6 +149,7 @@ const removeTask = async (req, res) => {
 
         res.status(200).json({ message: 'Task completed successfully.' });
     } catch (error) {
+        console.error(error);
         res.status(400).json({ message: error.message });
     }
 };

@@ -8,7 +8,7 @@ router.get('/tasks', protect, dueTasks);
 router.get('/complitedtasks', protect, completedTasks);
 router.get('/getSingleTask/:id' , protect, getSingleTask);
 router.post('/addtask', protect, addtask);
-router.put('/updatetask/:taskId', protect, editTask);
-router.delete('/remove/:id', removeTask);
+router.put('/editTask/:taskId', protect, editTask);
+router.put('/remove/:id',protect, removeTask);
 
 export default router;
