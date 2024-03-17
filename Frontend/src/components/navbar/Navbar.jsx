@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Link } from 'react-router-dom'
 import { BsFillCloudSunFill } from 'react-icons/bs'
 import { FiSun } from 'react-icons/fi'
-import myContext from '../../context/data/myContext'
+import Mycontext from '../../context/data/Mycontext'
 import { RxCross2 } from 'react-icons/rx';
 import { useDispatch } from 'react-redux'
 import { userLogout } from '../../redux/UserSlice'
@@ -19,7 +19,7 @@ export default function Navbar() {
     localStorage.removeItem('user');
   }
 
-  const context = useContext(myContext)
+  const context = useContext(Mycontext)
   const { toggleMode, mode } = context
 
   return (

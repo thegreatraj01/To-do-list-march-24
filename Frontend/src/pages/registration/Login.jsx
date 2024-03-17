@@ -7,7 +7,7 @@ import open_eye from '../../images/open-eye.png';
 import close_eye from '../../images/close-eye.png';
 import { useDispatch } from 'react-redux';
 import { userLogin } from '../../redux/UserSlice';
-import myContext from '../../context/data/myContext';
+import Mycontext from '../../context/data/Mycontext';
 import Layout from '../../components/layout/Layout';
 
 function Login() {
@@ -19,7 +19,7 @@ function Login() {
         dispatch(userLogin({ user, token }));
     }
 
-    const context = useContext(myContext)
+    const context = useContext(Mycontext)
     const { mode } = context
 
     const initialValues = {

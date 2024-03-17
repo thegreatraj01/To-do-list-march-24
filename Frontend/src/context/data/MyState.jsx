@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-// import MyContext from './Mycontext.jsx';
-// import myContext from './myContext';
-import MyContext from './Mycontext.jsx'
+// import Mycontext from './Mycontext.jsx';
+// import Mycontext from './Mycontext';
+import Mycontext from './Mycontext.jsx'
 
 const MyState = (props) => {
     // Retrieve mode from localStorage if available, otherwise default to 'light'
@@ -21,9 +21,9 @@ const MyState = (props) => {
     }
 
     return (
-        <MyContext.Provider value={{ mode, toggleMode }}>
+        <Mycontext.Provider value={{ mode, toggleMode }}>
             {props.children}
-        </MyContext.Provider>
+        </Mycontext.Provider>
     )
 }
 

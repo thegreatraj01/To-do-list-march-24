@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer';
-import myContext from '../../context/data/myContext';
+import Mycontext from '../../context/data/Mycontext';
 
 const Layout = ({ children }) => {
-    const context = useContext(myContext);
+    const context = useContext(Mycontext);
     const { mode } = context;
 
 

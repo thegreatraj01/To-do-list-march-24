@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import Layout from '../../components/layout/Layout';
 // import { MdOutlineProductionQuantityLimits, IoReorderFour, FcSalesPerformance } from 'react-icons/all';
 // import { Link } from 'react-router-dom';
-// import myContext from '../../context/data/myContext';
-import myContext  from '../../context/data/Mycontext.jsx';
+// import Mycontext from '../../context/data/Mycontext';
+import Mycontext  from '../../context/data/Mycontext.jsx';
 import axios from 'axios';
 import ComplitedTask from './ComplitedTask';
 import AddTaskModal from './Addproduct';
@@ -13,7 +13,7 @@ import EditTask from './EditTask';
 
 const Home = () => {
 
-  const context = useContext(myContext);
+  const context = useContext(Mycontext);
   const { mode } = context;
   const [path, setPath] = useState('task');
 
