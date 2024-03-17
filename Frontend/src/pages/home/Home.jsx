@@ -117,7 +117,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="flex flex-col sm:flex-col  md:flex-row">
-        <div className="left-sidebar bg-slate-100 md:min-h-screen py-3 px-6 md:py-8 w-full sm:w-64" style={{ backgroundColor: mode === 'dark' ? 'rgb(30, 44, 40)' : '', color: mode === 'dark' ? 'white' : '' }}>
+        <div className="left-sidebar bg-slate-100 md:min-h-screen py-3 px-6 md:py-8 w-full md:w-64 " style={{ backgroundColor: mode === 'dark' ? 'rgb(30, 44, 40)' : '', color: mode === 'dark' ? 'white' : '' }}>
           <div className="flex flex-row md:flex-col gap-3">
             <div onClick={() => setPath('task')} className="nav-button-container bg-gray-200 p-3 rounded-lg flex items-center gap-4  hover:bg-blue-200" style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 44, 52)' : '' }}>
               <button style={{ color: mode === 'dark' ? 'white' : '' }} className="nav-button text-gray-800 hover:text-white">My Tasks</button>

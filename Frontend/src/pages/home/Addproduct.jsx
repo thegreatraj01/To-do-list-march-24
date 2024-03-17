@@ -71,7 +71,7 @@ const AddTaskModal = ({ isOpen, closeModal, mode }) => {
                             <textarea cols="25" rows="8" name='description'
                                 value={taskData.description}
                                 onChange={handleChange}
-                                className=' bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white outline-none'
+                                className=' bg-gray-600 mb-1 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white outline-none'
                                 placeholder='description'
                                 style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 40, 40)' : 'rgb(240, 240, 240)', color: mode === 'dark' ? 'white' : 'black' }}
                             >
@@ -79,7 +79,9 @@ const AddTaskModal = ({ isOpen, closeModal, mode }) => {
                             </textarea>
                         </div>
                         <div>
+                            <label htmlFor="inputDate" className='pb-2 inline-block'>Complite Before </label>
                             <input type="date"
+                                id='inputDate'
                                 name='dueDate'
                                 value={taskData.dueDate}
                                 onChange={handleChange}

@@ -93,7 +93,7 @@ function Login() {
     return (
         <Layout>
             <section className="" style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 44, 52)' : '', color: mode === 'dark' ? 'white' : '', }}>
-                <div className="flex flex-col items-center justify-center px-6 pt-8 mx-auto lg:py-0">
+                <div className="flex flex-col items-center justify-center px-6 pt-8 mx-auto">
                     <div className="w-full bg-white shadow md:mt-0 sm:max-w-md xl:p-0 dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 44, 52)' : '', color: mode === 'dark' ? 'white' : '', }}>
                         <div className="p-6 rounded-xl space-y-4 md:space-y-6 sm:p-8" style={{ backgroundColor: mode === 'dark' ? '#1F1F1F' : '', color: mode === 'dark' ? 'white' : '', }}>
                             <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl" style={{ color: mode === 'dark' ? 'white' : '', }}>
