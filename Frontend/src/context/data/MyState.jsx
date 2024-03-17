@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import MyContext from './MyContext.jsx';
+// import MyContext from './Mycontext.jsx';
+// import myContext from './myContext';
+import MyContext from './Mycontext.jsx'
 
 const MyState = (props) => {
     // Retrieve mode from localStorage if available, otherwise default to 'light'
