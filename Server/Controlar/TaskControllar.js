@@ -17,10 +17,12 @@ const dueTasks = async (req, res) => {
     }
 };
 const completedTasks = async (req, res) => {
+    console.log('ji');
     try {
         // Calculate yesterday's date
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
+        console.log(yesterday);
 
         // Find completed tasks for the authenticated user
         const completedTasks = await Todo.find({
